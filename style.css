@@ -1,0 +1,96 @@
+/* General Reset */
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Header Styles */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 1440px;
+    height: 80px;
+    background-color: #fff;
+    padding: 0 112px;
+    position: relative;
+}
+
+/* Logo */
+.logo img {
+    width: 203px;
+    height: 60px;
+    object-fit: contain;
+    position: absolute;
+    top: 10px;
+    left: 112px;
+}
+
+/* Navbar Menu */
+nav {
+    height:44px ;
+    width: 782px;
+    display: flex;
+    gap: 15px;
+    top: 18px;
+    left: 546px;
+}
+
+nav a {
+    color: #2C2C2C;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 0 10px;
+    position: relative;
+    letter-spacing: 0%;
+    text-decoration: none;
+}
+
+
+nav .dropdown {
+    position: relative;
+}
+
+nav .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    z-index: 10;
+    padding: 10px 0;
+}
+
+nav .dropdown-menu a {
+    display: block;
+    padding: 8px 16px;
+    color: #333;
+    text-decoration: none;
+}
+
+
+
+nav .dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/* Contact Us Button */
+.contact-btn {
+    display: inline-block;
+    background-color: #00ADEF;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 4px;
+    padding: 12px 20px;
+    position: absolute;
+    top: 18px;
+    right : 112px;
+}
+
