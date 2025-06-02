@@ -1,0 +1,168 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  background: #fff;
+  color: #333;
+}
+
+.service-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 60px 5%;
+  width: 919.68505859375;
+  height: 876;
+  background-position: right;
+  background-repeat: no-repeat;
+}
+
+.text-content {
+  flex: 1;
+  min-width: 320px;
+  max-width: 600px;
+}
+
+.subheading {
+  font-size: 14px;
+  color: #00aaff;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 32px;
+  font-weight: 700;
+  margin: 0 0 20px;
+}
+
+h2 em {
+  font-style: italic;
+  color: #111;
+}
+
+.description {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.feature {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.feature img {
+  width: 40px;
+  height: 40px;
+}
+
+.feature h4 {
+  font-size: 16px;
+  margin: 0 0 5px;
+  color: #111;
+}
+
+.feature p {
+  font-size: 14px;
+  line-height: 1.6;
+  margin: 0;
+  color: #555;
+}
+
+.stats {
+  display: flex;
+  gap: 40px;
+  margin-top: 40px;
+  flex-wrap: wrap;
+}
+
+.stat-box .label {
+  font-size: 13px;
+  color: #666;
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 4px;
+}
+
+.stat-box .value {
+  font-size: 20px;
+  font-weight: bold;
+  color: #00ADEF;
+
+}
+
+.phone {
+  color: #00ADEF;
+  text-decoration: none;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  background-color: #fff;
+}
+
+.call-banner {
+  display: flex;
+  align-items: center;
+  border: 2px solid #00b4f0;
+  padding: 10px 20px;
+  width: fit-content;
+  background-color: #fff;
+}
+
+.call-icon {
+  width: 48px;
+  height: 48px;
+  border: 2px solid #00b4f0;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 15px;
+}
+
+.call-icon img {
+  width: 24px;
+  height: 24px;
+}
+
+.call-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.call-label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+}
+
+.call-number {
+  font-size: 20px;
+  font-weight: bold;
+  color: #00ADEF;
+  text-decoration: none;
+}
+
+.image-grid img {
+  width: 592px;
+  height: 550px;
+  border-radius: 8px;
+  object-fit: cover;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+@media (min-width: 768px) {
+  .image-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .image-grid img:first-child {
+    grid-column: span 2;
+  }
+}
