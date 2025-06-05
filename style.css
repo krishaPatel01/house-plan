@@ -166,3 +166,226 @@ body {
     grid-column: span 2;
   }
 }
+
+/* recent-works */
+.section-container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2rem;
+  align-items: flex-start;
+}
+
+.text-box {
+  flex: 1 1 350px;
+  background-color: #e6f2f8;
+  padding: 2rem;
+}
+
+.subtitle {
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  color: #4694b2;
+  margin-bottom: 0.5rem;
+  letter-spacing: 1px;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.4;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.6rem 1.2rem;
+  background-color: #00aaff;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 4px;
+  transition: 0.3s;
+  object-position: left;
+}
+
+.btn:hover {
+  background-color: #008fcc;
+}
+
+.image-grid {
+  flex: 2 1 600px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+  gap: 0.5rem;
+  padding: 1rem;
+}
+
+.img-large {
+  grid-column: span 2;
+}
+
+.image-grids{
+  width: 1440px;
+  height: 800px;
+  display: block;
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+/* CUSTOMER TESTIMONIALS */
+body{
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.testimonials {
+    padding: 40px;
+    max-width: 800px;
+    margin: auto;
+}
+
+.testimonial-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.testimonial-card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px  #E1F7FF;
+    width: 250px;
+}
+
+.stars {
+    font-size: 20px;
+    color:#00ADEF;
+
+}
+
+.quote {
+    font-style: italic;
+    margin: 10px 0;
+}
+
+.client-name {
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+    color: #00ADEF;
+}
+
+/* footer */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f9f9f9;
+}
+
+.footer {
+  background-color: #f4f6f8;
+  padding: 2rem;
+  color: #333;
+}
+
+.footer-top {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.footer-col {
+  flex: 1 1 200px;
+  min-width: 200px;
+}
+
+.logo {
+  width: 204;
+  height: 60;
+  margin-bottom: 1rem;
+}
+
+.footer-text {
+width: 276;
+height: 221;
+gap: 16px;
+}
+
+.consultation-link {
+  color: #00ADEF;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.footer-col h4 {
+  font-size: 1.1rem;
+  margin-bottom: 0.75rem;
+}
+
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-col ul li {
+  margin-bottom: 0.4rem;
+  font-size: 0.95rem;
+}
+
+.email, .phone {
+  display: block;
+  color: #00ADEF;
+  text-decoration: none;
+  margin: 0.3rem 0;
+  font-weight: bold;
+}
+
+.footer-middle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 1rem 0;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 1rem;
+}
+
+.payment-icons img,
+.certifications img {
+  margin-right: 0.5rem;
+  vertical-align: middle;
+  width: 201;
+  height: 96;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  font-size: 0.85rem;
+  color: #666;
+}
+
+.footer-bottom a {
+  color: #00ADEF;
+  text-decoration: none;
+}
+
+.social {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.social img {
+ width: 52;
+ height: 16;
+ top: 18.12px;
+ left: 9.59px;
+
+}
