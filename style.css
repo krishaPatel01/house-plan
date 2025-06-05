@@ -36,16 +36,31 @@ nav {
     gap: 15px;
     top: 18px;
     left: 546px;
+    align-items: center;
 }
 
 nav a {
     color: #2C2C2C;
-    font-size: 14px;
+    font-size: 15px;
     font-weight: 500;
     padding: 0 10px;
     position: relative;
     letter-spacing: 0%;
     text-decoration: none;
+}
+nav a:hover {
+  color: #007bff; /* Change text color to blue */
+}
+
+.nav a:hover::after {
+  content: ""; /* Empty content for pseudo-element */
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0; /* Initially no width */
+  height: 2px; /* Thickness of underline */
+  background-color: #007bff; /* Blue underline color */
+  transition: width 0.3s ease; /* Smooth width transition */
 }
 
 
@@ -94,3 +109,537 @@ nav .dropdown:hover .dropdown-menu {
     right : 112px;
 }
 
+/** home style **/
+.home-section {
+    background: url('assets/images/banner-one.png') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    position: relative;
+}
+
+.home-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.home-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+}
+
+.home-content h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.home-content p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.button-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.button {
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+
+.button.primary {
+    background-color: #007bff; 
+    color: white;
+    border: none; 
+    text-decoration: none; 
+    padding: 10px 20px;
+    border-radius: 5px; 
+    font-size: 1rem; 
+    transition: background-color 0.3s ease; /* Smooth transition on hover */
+}
+
+.button.primary:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+.button.secondary {
+    background-color: white; /* White background */
+    color: #007bff; /* Blue text */
+    border: 2px solid #007bff; /* Blue border */
+    text-decoration: none; /* Remove underline */
+    padding: 10px 20px; /* Padding around text */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 1rem; /* Font size */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition on hover */
+}
+
+.button.secondary:hover {
+    background-color: #007bff; /* Blue background on hover */
+    color: white; /* White text on hover */
+}
+
+
+/** end of home style **/
+
+/** helight section **/
+
+.highlights-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 40px;
+  background-color: #222; /* Match background color */
+  position: relative; /* Add position relative for the pseudo-element */
+}
+
+.highlights-header {
+  transform: rotate(-90deg);
+  white-space: nowrap;
+  font-style: italic;
+  font-size: 16px;
+  color: #FFFFFF;
+  position: relative;
+}
+
+.highlights-header::after {
+  content: "";
+  position: absolute;
+  left: 50%; /* Place the line right after the text */
+  top: 300%;
+  transform: translateY(-50%);
+  width: 2px; /* Adjust the thickness of the line */
+  height: 120px; /* Adjust the height of the line */
+  background-color: #FFFFFF; /* Line color */
+}
+
+.highlights-content {
+  display: flex;
+  gap: 64px;
+  margin-left: 20px; /* Add some spacing to separate content from the line */
+}
+.highlight-item {
+  display: flex; /* Use flexbox for horizontal alignment */
+  align-items: center; /* Vertically align image and text */
+  gap: 16px; /* Space between image and text */
+  height: 80px; /* Optional: adjust based on your design */
+  width: auto; /* Adjust as needed */
+}
+
+.highlight-item img.icon {
+  width: 80px; /* Adjust size as per design */
+  height: 80px;
+}
+
+.highlight-item p {
+  margin: 0;
+  font-size: 14px;
+  color: #D9D9D6; /* Light blue color for text */
+  text-align: left; /* Align text to the left */
+  white-space: nowrap; /* Prevent text wrapping (optional) */
+}
+
+/** end of helight section **/
+
+/** about us style **/
+
+/* General Styles */
+.about-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.text-content {
+    max-width: 600px;
+}
+
+.section-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.blue-line {
+    width: 40px;
+    height: 2px;
+    background-color: #00aeef;
+    margin-right: 10px;
+}
+
+.text-content h4 {
+    color: #00aeef;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.text-content h1 {
+    font-size: 36px;
+    line-height: 1.4;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.text-content h1 span {
+    font-style: italic;
+}
+
+.text-content p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.learn-more-btn {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #00aeef;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.learn-more-btn:hover {
+    background-color: #008ecf;
+}
+
+.blue-framework {
+    position: relative;
+    width: 50%;
+    border: 2px solid #00aeef;
+    height: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden; 
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.image {
+    position: absolute;
+    width: 48%; 
+    height: 48%;
+    object-fit: cover;
+    border: 2px solid #00aeef;
+    border-radius: 5px;
+}
+
+.upper-image {
+    top: 10px;
+    left: 10px;
+}
+
+.lower-image {
+    bottom: 10px;
+    right: 10px;
+}
+
+/** end of about us style **/
+
+/** why choose us style **/
+
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+.why-choose-us {
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+}
+
+.container {
+  display: flex;
+  gap: 40px;
+  max-width: 1200px;
+}
+
+.image-section .main-image {
+  width: 400px;
+  height: auto;
+  border: 2px solid #00aeef; /* Light blue border */
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.content-section {
+  max-width: 600px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.blue-line {
+  width: 40px;
+  height: 2px;
+  background-color: #00aeef; /* Light blue */
+}
+
+.section-title {
+  color: #00aeef;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 28px;
+  font-weight: normal;
+  margin: 0;
+}
+
+h1 .guaranteed {
+  font-weight: bold;
+  font-style: italic;
+}
+
+.tabs {
+  display: flex;
+  margin: 20px 0;
+  border-bottom: 1px solid #ccc;
+}
+
+.tab {
+  margin-right: 20px;
+  padding: 5px 0;
+  cursor: pointer;
+  font-size: 14px;
+  color: #333;
+}
+
+.tab {
+  margin-right: 20px;
+  padding: 5px 0;
+  cursor: pointer;
+  font-size: 14px;
+  color: #333;
+  transition: color 0.3s ease, border-bottom 0.3s ease; /* Smooth transition */
+}
+
+.tab:hover {
+  color: #00aeef; /* Change text color on hover */
+  border-bottom: 2px solid #00aeef; /* Add blue underline on hover */
+}
+
+
+.tab-content {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.tab-content-image .secondary-image {
+  width: 150px;
+  height: auto;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.tab-content-text {
+  max-width: 400px;
+}
+
+.tab-content-text h2 {
+  font-size: 18px;
+  margin: 0 0 10px;
+}
+
+.tab-content-text p {
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+.tab-content-text ul {
+  list-style: none;
+}
+
+/** end of why choose us style **/   
+
+/** our services style **/
+.service-section {
+    background: url('assets/images/banner-one.png') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    position: relative;
+}
+
+/* Blue Section Styles */
+.blue-section {
+  height: 859px;
+  width: 870px;
+  top: 57px;
+  left: 30% !important;
+  background-color: #009fe3; /* Bright blue */
+  color: #fff;
+  padding: 80px 20px 40px;
+  z-index: 1;
+}
+
+.blue-section-content {
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.section-label {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 14px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #d6f0ff;
+  margin-bottom: 20px;
+}
+
+.section-label .line {
+  width: 40px;
+  height: 2px;
+  background-color: #d6f0ff;
+}
+
+.section-heading {
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 1.4;
+  max-width: 700px;
+}
+
+.section-heading em {
+  font-style: italic;
+  font-weight: 600;
+}
+
+.services-section {
+  background: #00aaff;
+  color: white;
+  padding: 4rem 2rem 6rem;
+  font-family: 'Segoe UI', sans-serif;
+  position: relative;
+}
+
+.services-header {
+  max-width: 700px;
+  margin: 0 auto 3rem;
+  text-align: left;
+  color: white;
+}
+
+.services-header .section-label {
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  border-left: 2px solid white;
+  padding-left: 0.5rem;
+  display: inline-block;
+  margin-bottom: 1rem;
+}
+
+.services-header h2 {
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+.services-header em {
+  font-style: italic;
+  font-weight: 600;
+}
+
+.services-grid {
+  display: flex;
+  /* grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); */
+  gap: 1.5rem;
+  background: white;
+  padding: 2rem;
+  border-radius: 4px;
+  position: relative;
+  z-index: 2;
+}
+
+.service-card {
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  padding: 1.5rem;
+  text-align: left;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.service-card .icon {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.service-card h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #222;
+}
+
+.service-card p {
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 1rem;
+}
+
+.service-card a {
+  text-decoration: none;
+  font-weight: 600;
+  color: #007acc;
+  font-size: 0.9rem;
+  border: 1px solid #007acc;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+
+.service-card a:hover {
+  background: #007acc;
+  color: white;
+}
+
+/** end of our services style **/
