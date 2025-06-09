@@ -3,9 +3,197 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="contact.css" />
 </head>
 <body>
-    <h1>Contact us</h1>
+
+    <header>
+        <div class="logo">
+            <img src="./assets/images/logo (2).png" alt="logo">
+        </div>
+        <nav>
+            <a href="#" class="active">Home</a>
+            <div class="dropdown">
+                <a href="#">Remodeling &#x25BC;</a>
+                <div class="dropdown-menu">
+                    <a href="#">Exterior Siding</a>
+                    <a href="#">Windows</a>
+                    <a href="#">Decks</a>
+                    <a href="#">Fencing</a>
+                    <a href="#">Outdoor Living Spaces</a>
+                    <a href="#">Room Additions</a>
+                    <a href="#">Garages</a> 
+
+                </div>
+            </div>
+            <div class="dropdown">
+                <a href="#">New Construction &#x25BC;</a>
+                <div class="dropdown-menu">
+                    <a href="#">Siding</a>
+                    <a href="#">Framing</a>
+                    <a href="#">Decks</a>
+                    <a href="#">Homes</a>
+                    <a href="#">Additions</a>
+                </div>
+            </div>
+            <a href="#">Suppliers</a>
+            <a href="#">Gallery</a>
+            <a href="#">About Us</a>
+        </nav>
+        <a href="#" class="contact-btn">Contact Us &#8594;</a>
+    </header>
+
+    <section class="home-section">
+        <div class="overlay">
+             <h1>Give 316 Exteriors A Call Today!</h1>
+        </div>
+    </section>
+
+    <section class="contact-section">
+    <h2>Our <span>Contact</span> Information</h2>
+    <div class="contact-grid">
+
+      <!-- Email -->
+      <div class="contact-card">
+        <img src="assets/images/contact-1.png" alt="Email Icon">
+        <div>
+          <h4>Email</h4>
+          <p>316exteriorsks@gmail.com</p>
+        </div>
+      </div>
+
+      <!-- Contact -->
+      <div class="contact-card">
+        <img src="assets/images/contact-2.png" alt="Phone Icon">
+        <div>
+          <h4>Contact</h4>
+          <p>(316) 993-8779</p>
+        </div>
+      </div>
+
+      <!-- Address -->
+      <div class="contact-card address-card">
+        <img src="assets/images/contact-3.png" alt="Location Icon">
+        <div>
+          <h4>Our Address</h4>
+          <p>9842 W 23rd St S Wichita, KS 67217</p>
+        </div>
+      </div>
+
+      <!-- Business Hours -->
+      <div class="contact-card">
+        <img src="assets/images/contact-4.png" alt="Clock Icon">
+        <div>
+          <h4>Business Hours</h4>
+          <p>Mon - Sat: 7:00 AM - 5:00 PM<br>Sun: Closed</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <section class="contact-container">
+    <div class="contact-box">
+      <h2><em>Get</em> In Touch</h2>
+      <form action="#" method="POST" class="contact-form">
+        <div class="form-row">
+          <input type="text" name="first_name" placeholder="Enter First Name" required />
+          <input type="text" name="last_name" placeholder="Enter Last Name" required />
+        </div>
+        <div class="form-row">
+          <input type="email" name="email" placeholder="example@email.com" required />
+          <input type="tel" name="phone" placeholder="(123) 456-7890" pattern="[0-9]{10}" required />
+        </div>
+        <div class="form-row full">
+          <textarea name="message" placeholder="Type here..." required></textarea>
+        </div>
+        <div class="form-row full captcha-row">
+          <input type="checkbox" required />
+          <label>I'm not a robot</label>
+          <div class="captcha-box">[reCAPTCHA]</div>
+        </div>
+        <div class="form-row full">
+          <button type="submit">SEND MESSAGE</button>
+        </div>
+      </form>
+    </div>
+    <div class="map-image"></div>
+  </section>
+
+
+  <!-- footer -->
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="footer-col">
+        <img width="204" height="60" src="assets/images/logo (2).png" alt="Logo (2)" class="logo (2)"/>
+        <p class="footer-text">Ready to Upgrade Your Home’s Exterior?</p>
+        <a href="#" class="consultation-link">Request a Free Consultation</a>
+      </div>
+
+      <div class="footer-col">
+        <h4>Remodel & Construction</h4>
+        <ul>
+          <li>Exterior Siding</li>
+          <li>Windows</li>
+          <li>Decks</li>
+          <li>Fencing</li>
+          <li>Outdoor Living Spaces</li>
+          <li>Room Additions</li>
+          <li>Garages</li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li>Siding</li>
+          <li>Framing</li>
+          <li>Homes</li>
+          <li>Additions</li>
+          <li>Project Gallery</li>
+          <li>Contact Us</li>
+          <li>About Us</li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Wichita, Kansas</h4>
+        <p>962 Fifth Avenue Str., 3rd Floor-Trump<br>Building NY 10006, United State.</p>
+        <p>Email us at</p>
+        <a href="mailto:316exteriorsllc@gmail.com" class="email">316exteriorsllc@gmail.com</a>
+        <p>If you're hurry, quick call for us</p>
+        <a href="tel:+13169938779" class="phone">(316) 993–8779</a>
+      </div>
+    </div>
+
+    <div class="footer-middle">
+      <div class="payment-icons">
+        <img width="74" height="51"  src="assets/images/visa.jpg" alt="visa" />
+        <img width="74" height="51" src="assets/images/masterbase.jpg" alt="mastercard" />
+        <img width="74" height="51" src="assets/images/masterbase.jpg" alt="mastercard" />
+        <img width="74" height="51" src="assets/images/amex.jpg" alt="amex" />
+        <img width="74" height="51" src="assets/images/cash.jpg" alt="cash" />
+        <img width="74" height="51" src="assets/images/check.jpg" alt="check" />
+        <img width="225" height="119" src="assets/images/waba.png" alt="waba" />
+        <img width="158" height="130" src="assets/images/certified.png" alt="certified" />
+        <img width="201" height="96" src="assets/images/google.png" alt="google review" />
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>Content, including images, displayed on this website is protected by copyright laws. Downloading, republication, retransmission or reproduction of content on this website is strictly prohibited. 
+        <a href="#">Terms of Use</a> | <a href="#">Privacy Policy</a>
+      </p>
+      <div class="social">
+        <span>FOLLOW US ON</span>
+        <a href="#"><img src="assets/images/Social Icons (3).png" alt="Social Icons (3)"></a>
+        <a href="#"><img src="assets/images/Social Icons (2).png" alt="Social Icons (2)"></a>
+      </div>
+    </div>
+  </footer>
+
+  
 </body>
 </html>
