@@ -492,31 +492,59 @@ gap: 16px;
   font-size: 0.95rem;
 }
 
-.email, .phone {
-  display: block;
-  color: #00ADEF;
-  text-decoration: none;
-  margin: 0.3rem 0;
-  font-weight: bold;
-}
-
 .footer-middle {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  padding: 1rem 0;
-  border-top: 1px solid #ddd;
-  border-bottom: 1px solid #ddd;
-  margin-bottom: 1rem;
+  background-color: #f5f7fa; /* light background */
+  padding: 40px 20px;
 }
 
-.payment-icons img,
-.certifications img {
-  margin-right: 0.5rem;
-  vertical-align: middle;
-  width: 201;
-  height: 96;
+.payment-icons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.payment-icons img {
+  object-fit: contain;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.mr-10 {
+  margin-right: 10px;
+}
+
+.mr-47 {
+  margin-right: 47px;
+}
+
+
+.payment-icons img:hover {
+  transform: scale(1.05); /* slight zoom on hover */
+}
+
+/* Tablet */
+@media (max-width: 992px) {
+  .payment-icons {
+    gap: 15px;
+  }
+
+  .payment-icons img {
+    max-width: 100px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+  .payment-icons {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .payment-icons img {
+    max-width: 80%;
+  }
 }
 
 .footer-bottom {
