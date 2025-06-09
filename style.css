@@ -390,3 +390,78 @@ gap: 16px;
  left: 9.59px;
 
 }
+
+/* Small screens (up to 600px) */
+@media (max-width: 600px) {
+  .service-section {
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 3%;
+  }
+
+  .text-content {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .feature {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .testimonial-container {
+    flex-direction: column;
+  }
+
+  .footer-top {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+/* Medium screens (601px to 1024px) */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .service-section {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 40px 5%;
+  }
+
+  .text-content {
+    flex: 1 1 50%;
+  }
+
+  .image-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .testimonial-container {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .footer-top {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+/* Large screens (1025px and up) */
+@media (min-width: 1025px) {
+  .service-section {
+    justify-content: space-between;
+    padding: 60px 5%;
+  }
+
+  .image-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .testimonial-container {
+    justify-content: space-between;
+  }
+
+  .footer-top {
+    justify-content: space-between;
+  }
+}
