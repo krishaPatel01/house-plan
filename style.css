@@ -10,74 +10,102 @@ header {
     position: relative;
 }
 
+.banner {
+  position: relative;
+  width: 100%;
+  height: 80px;
+  background-size: cover;
+  background-position: center;
+}
+
+.banner-text {
+  position: absolute;
+  top: -200%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 26px;
+  font-weight: 500;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+  text-align: center;
+}
+
 /* Logo */
 .logo img {
-    height: 50px;
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-    margin: 0;
-    padding: 0;
-}
-
-nav ul li {
-    margin: 0 10px;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
-}
-
-.contact-button {
-    background-color: #007bff;
-    color: #fff;
-    padding: 10px 20px;
-    border-radius: 5px;
-}
-
-.hero {
-    position: relative;
-    text-align: center;
-}
-
-.hero img {
-    width: 100%;
-    height: auto;
-}
-
-.hero-text {
+    width: 203px;
+    height: 60px;
+    object-fit: contain;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: #fff;
-    padding: 20px;
-    border-radius: 10px;
+    top: 10px;
+    left: 112px;
 }
 
-.hero-text h1 {
-    margin: 0;
-    font-size: 2em;
+/* Navbar Menu */
+nav {
+    height:44px ;
+    width: 782px;
+    display: flex;
+    gap: 15px;
+    top: 18px;
+    left: 546px;
+    align-items: center;
+}
+
+nav a {
+    color: #2C2C2C;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 0 10px;
+    position: relative;
+    letter-spacing: 0%;
+    text-decoration: none;
+}
+nav a:hover {
+  color: #00ADEF; 
+}
+
+.nav a:hover::after {
+  content: ""; 
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px; 
+  background-color: #00ADEF; 
+  transition: width 0.3s ease; 
+}
+
+
+nav .dropdown {
+    position: relative;
+}
+
+nav .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    z-index: 10;
+    padding: 10px 0;
+}
+
+nav .dropdown-menu a {
+    display: block;
+    padding: 8px 16px;
+    color: #333;
+    text-decoration: none;
+}
+
+nav .dropdown:hover .dropdown-menu {
+    display: block;
 }
 
 
 /* about us */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: 'Segoe UI', sans-serif;
-  background: #fff;
-  color: #222;
-  padding: 40px 20px;
-}
 
 .about-container {
   display: flex;
